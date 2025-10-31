@@ -9,7 +9,9 @@ where...
 
 ## Usage
 
-Clone this repo or download `poldi`, then run it:
+Clone this repo or
+[download](https://github.com/bjoernalbers/poldi/releases/latest/download/poldi)
+`poldi`, then run it:
 
 ```
 ./poldi
@@ -21,6 +23,6 @@ Alternatively download and run it in one command:
 curl -fsSL https://github.com/bjoernalbers/poldi/releases/latest/download/poldi | sh   
 ```
 
-After some time it will show you the magic number: **381654729**
+After some time it will show you the magic number: **381654730**
 
 (It runs for approx. 2 minutes on my MacBook Air M3.)

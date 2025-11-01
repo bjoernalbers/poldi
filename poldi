@@ -29,6 +29,6 @@ find_polydivisible() {
 	}'
 }
 
-seq -f '%09.0f' 0 999999999 \
+seq -f '%09.0f' 123456789 987654321 \
 	| apply_filters \
 	| find_polydivisible

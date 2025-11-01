@@ -14,6 +14,7 @@ apply_filters() {
 		| grep -Ev '(.).*\1'
 }
 
+# Validate if the first n digits are division by n.
 validate_polydivisible() {
 	awk '
 	{
@@ -29,6 +30,7 @@ validate_polydivisible() {
 	}'
 }
 
+# Main pipeline.
 seq -f '%09.0f' 123456789 987654321 \
 	| apply_filters \
 	| validate_polydivisible

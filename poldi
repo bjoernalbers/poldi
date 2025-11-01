@@ -5,12 +5,12 @@
 
 export PATH="/bin:/sbin:/usr/bin:/usr/sbin"
 
-# These filters will improve search performance alot by removing obvious
-# invalid numbers from the list.
+# Filter out all numbers containing 0, reduce numbers by checking for simple
+# division rules (odd/even) and remove numbers with duplicate digits.
+# These filters will improve search performance alot!
 apply_filters() {
 	grep -v 0 \
-		| grep -E '\d{4}5\d{4}' \
-		| grep -E '\d[2468]\d{3}[2468]\d{3}' \
+		| grep -E '[1379][2468][1379][2468]5[1379][2468][1379][2468]' \
 		| grep -Ev '(.).*\1'
 }
 

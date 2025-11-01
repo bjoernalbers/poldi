@@ -10,7 +10,7 @@ export PATH="/bin:/sbin:/usr/bin:/usr/sbin"
 # These filters will improve search performance alot!
 apply_filters() {
 	grep -v 0 \
-		| grep -E '[1379][2468][1379][2468]5[1379][2468][1379][2468]' \
+		| grep -E '[1379][2468][1379][2468]5[2468][1379][2468][1379]' \
 		| grep -Ev '(.).*\1'
 }
 

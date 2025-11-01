@@ -14,7 +14,7 @@ apply_filters() {
 		| grep -Ev '(.).*\1'
 }
 
-find_polydivisible() {
+validate_polydivisible() {
 	awk '
 	{
 		is_valid = 1
@@ -31,4 +31,4 @@ find_polydivisible() {
 
 seq -f '%09.0f' 123456789 987654321 \
 	| apply_filters \
-	| find_polydivisible
+	| validate_polydivisible
